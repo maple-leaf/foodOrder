@@ -1,0 +1,15 @@
+{
+  "name": "foodOrder",
+  "version": "0.0.0",
+  "description": "order system of food",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "foodOrder"
+  },
+  "author": "maple-leaf",
+  "license": "BSD-2-Clause"
+}

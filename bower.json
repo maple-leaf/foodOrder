@@ -1,0 +1,22 @@
+{
+  "name": "foodOrder",
+  "version": "0.0.0",
+  "authors": [
+    "maple-leaf <tangjf.88@163.com>"
+  ],
+  "description": "order system of food",
+  "main": "index.php",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.0.8",
+    "angular-ui-bootstrap": "~0.6.0",
+    "bootstrap": "~3.0.1"
+  }
+}

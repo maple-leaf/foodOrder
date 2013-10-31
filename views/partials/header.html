@@ -1,0 +1,8 @@
+<div class="language-switcher" ng-repeat="lang in langs">
+    <a ng-click="lang-switcher(lang)" class="{{lang}}">{{lang}}</a>
+</div>
+<div class="login-info">
+    <div ng-if="{{authed}}">Logout</div>
+    <div ng-if="{{!authed}}">Login</div>
+</div>
+<button ng-click="{{authed=!authed}}" ng-model="authed">{{authed}}</button>
