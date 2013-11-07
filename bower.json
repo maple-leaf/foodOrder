@@ -16,7 +16,8 @@
   ],
   "devDependencies": {
     "angular": "~1.0.8",
-    "angular-ui-bootstrap": "~0.6.0",
-    "bootstrap": "~3.0.1"
+    "bootstrap": "~3.0.1",
+    "angular-ui-bootstrap3": "~0.6.0",
+    "angular-cookies": "~1.0.8"
   }
 }
