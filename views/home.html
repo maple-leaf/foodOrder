@@ -1,0 +1,18 @@
+<div>index page</div>
+<table class="table table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Company</th>
+        <th>Age</th>
+    </tr>
+    <tr ng-repeat="user in visibleUsers">
+        <td ng-bind="user.id"></td>
+        <td ng-bind="user.name"></td>
+        <td ng-bind="user.gender"></td>
+        <td ng-bind="user.company"></td>
+        <td ng-bind="user.age"></td>
+    </tr>
+</table>
+<pagination max-size="visiblePageNo" page="initPageNo" items-per-page="itemsPerPage" on-select-page="changePage(page)" total-items="totalItems"></pagination>

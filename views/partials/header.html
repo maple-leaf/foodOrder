@@ -1,3 +1,7 @@
 <div class="language-switcher" ng-repeat="lang in langs">
     <a ng-click="lang-switcher(lang)" class="{{lang}}">{{lang}}</a>
 </div>
+<div login ng-if="!authed" anti-token="/functions/getAntiTokenKey.php" antitokenkey="setAntiKey(key)"></div>
+<div ng-if="authed">
+    <div logout anti-token="/functions/getAntiTokenKey.php" antitokenkey="setAntiKey(key)"></div>
+</div>

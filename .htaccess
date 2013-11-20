@@ -1,4 +1,9 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteRule ([a-zA-Z]{1,})-([0-9]{1,}).html$ rewrite.php?abc=$1&id=$2
+RewriteCond %{DOCUMENT_ROOT} !-f
+#RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml)$ index.php [QSA,L]
+RewriteRule !(assets|bower_components|functions|views)/.+$ index.php [QSA,L]
+</IfModule>
+
+<IfModule mod_mine.c>
 </IfModule>
