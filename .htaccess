@@ -1,6 +1,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine on
-RewriteCond %{DOCUMENT_ROOT} !-f
+#RewriteCond %{DOCUMENT_ROOT} !-f
+RewriteCond %{HTTP_HOST} ^phpfoodorder.com
+RewriteCond %{SERVER_PORT} ^88$
 #RewriteRule !\.(js|ico|gif|jpg|png|css|html|swf|flv|xml)$ index.php [QSA,L]
 RewriteRule !(assets|bower_components|functions|views)/.+$ index.php [QSA,L]
 </IfModule>
